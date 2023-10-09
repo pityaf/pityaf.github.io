@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Library</title>
+        <script src="./js/script.js"></script>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+    </head>
+</head>
+<body>
+    <header>
+        <h1>My Library</h1>
+    </header>
+
+    <main>
+        <form action="" method="POST" id="insert-book" class="insert-book">
+            <div class="wrapper">
+                <div class="input">
+                    <label for="book">Book</label>
+                    <input type="text" id="book" name="book" required>
+                </div>
+                <div class="input">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div class="input">
+                    <label for="status">Status</label>
+                    <select name="status" id="status">
+                        <option value="Read">Read</option>
+                        <option value="Not read">Not Read</option>
+                    </select>
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="add" />
+            </div>
+        </form>
+
+        <section class="display" id="display">
+            <table id="table">
+                <thead>
+                    <tr class="head">
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="library-table">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer></footer>
+</body>
+</html>

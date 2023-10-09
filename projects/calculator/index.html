@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <section id="result" class="result">
+            <div class="numbers">
+                <div class="first-operator">
+                    <h3 id="operator-one" class="operator-one"></h3>
+                    <h3 id="operator-two" class="operator-two"></h3>
+                </div>
+                <div>
+                    <p id="sign" class="sign"></p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div>
+                <h2 id="operation-result"></h2>
+            </div>
+        </section>
+        <section id="operators" class="operators grid">
+            <button id="clear" class="btn grid-span" >C</button>
+            <button id="split" class="btn" data-operator>/</button>
+
+            <button class="btn" data-number>7</button>
+            <button class="btn" data-number>8</button>
+            <button class="btn" data-number>9</button>
+            <button id="moltiply" class="btn" data-operator>*</button>
+
+            <button class="btn" data-number>4</button>
+            <button class="btn" data-number>5</button>
+            <button class="btn" data-number>6</button>
+            <button id="minus" class="btn" data-operator>-</button>
+
+            <button class="btn" data-number>1</button>
+            <button class="btn" data-number>2</button>
+            <button class="btn" data-number>3</button>
+            <button id="plus" class="btn" data-operator>+</button>
+
+            <button id="double-zero" class="btn" data-number>00</button>
+            <button id="zero" class="btn" data-number>0</button>
+            <button id="decimal" class="btn">,</button>
+            <button id="equal" class="btn">=</button>
+        </section>
+    </main>
+    <footer>
+        <p>©Copyright 2023 pityafinwe</p>
+    </footer>
+</body>
+</html>

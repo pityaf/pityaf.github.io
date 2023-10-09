@@ -1,0 +1,38 @@
+body {
+	color: azure;
+}
+main {
+	color: black;
+}
+aside {
+	background-color: #00BD9D;
+}
+
+.footer {
+	background-color: #343A40;
+}
+
+.hero {
+	background-image: url(../img/bg-home.jpg);
+	background-color: grey;
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: bottom;
+	height: 70vh;
+}
+.nav-link {
+	color: whitesmoke;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .accent-color  {
+	color: #00BD9D;
+}
+
+.accent-btn {
+	background-color: #1F88C0;
+	border-color: #1F88C0;
+}
+
+.img-1 {
+	height: 300px;
+	background-image: url(../img/img-03.jpg);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissor</title>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+    </header>
+    <main>
+        <section class="score">
+            <h2>Choose!</h2>
+            <p>First to score 5 points win!</p>
+        </section>
+        <section class="count">
+            <h3 id="result"></h3>
+            <div class="choice-score">
+                <div class="choice">
+                    <div id="user-choice" class="sign">❔</div>
+                </div>
+                <div class="choice">
+                    <div id="computer-choice" class="sign">❔</div>
+                </div>
+            </div>
+            <div class="display-count">
+                <div class="score-number">
+                    <p>Player:&nbsp;</p>
+                    <p id="user-score" class="user-score">0</p>
+                </div>
+                <div class="score-number">
+                    <p>Computer:&nbsp;</p>
+                    <p id="computer-score" class="computer-score">0</p>
+                </div>
+            </div>
+        </section>
+        <section class="choice">
+            <button id="rock" class="choice btnChoice">
+                <div class="sign">✊</div>
+            </button>
+            <button id="hand" class="choice btnChoice">
+                <div class="sign">✋</div>
+            </button>
+            <button id="scissor" class="choice btnChoice">
+                <div class="sign">✌️</div>
+            </button>
+        </section>
+        <section class="reset">
+            <button id="reset">
+                reset
+            </button>
+        </section>
+    </main>
+    <footer>
+        <p>©Copyright 2023 pityafinwe</p>
+    </footer>
+    <div id="end-game-modal" class="modal">
+        <h2 id="end-game"></h2>
+        <button id="end-game-btn" class="end-game-btn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+</body>
+</html>

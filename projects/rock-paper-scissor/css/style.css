@@ -1,0 +1,158 @@
+html {
+    position: relative;
+    height: 100%;
+}
+body {
+    background-color: #3E363F;
+    color: #FDCA40;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 { 
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+header {
+    font-family: 'Shrikhand', cursive;
+    height: 7rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    height: 100%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.btnChoice {
+    width: 10%;   
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+    height: 15rem;
+    width: 15rem;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.choice {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+btn {
+    display: flex;
+    justify-content: center;
+}
+.icon {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.display-count {
+    width: 10%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-count p {
+    padding-top: 2rem;
+}
+
+.score-number {
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.choice-score {
+    display: flex;
+}
+.choice-score .icon {
+    width: 50%;
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+    font-size: 7rem;
+    margin-bottom: 1rem;
+  }
+.reset {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.modal {
+    padding: 3rem;
+    color: #3E363F;
+    position: absolute;
+    z-index: 995;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #D0D0D7;
+    font-size: 30px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.end-game-btn {
+    font-size: 1.2rem;
+    background-color: #FDCA40;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+}

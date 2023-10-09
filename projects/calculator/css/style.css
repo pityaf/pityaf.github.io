@@ -1,0 +1,107 @@
+html {
+    position: relative;
+    min-width: 100%;
+}
+body {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+p {
+    font-size: 1.2rem;
+    padding-left: .5rem;
+}
+main {
+    margin-bottom: 5rem;
+    background: #dee4eb;
+    box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+    -6px -6px 10px rgba(255, 255, 255, .5),
+    6px 6px 8px rgba(255, 255, 255, .075),
+    6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+.numbers {
+    display: flex;
+}
+.grid {
+    padding: 2rem;
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-column-start:  2;
+}
+.grid-span {
+    grid-column-start:  3;
+}
+.btn {
+    aspect-ratio: 1/1;
+}
+.first-operator {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    height: 100px;
+}
+
+.result {
+    height: 200px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+.sign {
+    display: flex;
+    align-items: center;
+}
+.divider {
+    margin-right: .5rem;
+    width: 15%;
+    border: 1px solid black;
+}
+.operators button {
+    font-family: 'Raleway', sans-serif;
+    padding: .5rem .5rem;
+    background: #fff;
+    border: none;
+    border-radius: .5rem;
+    color: #14213d;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.operators button:hover {
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+                -2px -2px 4px rgba(255, 255, 255, .4),
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+}
+.operators button:active {
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+            inset -2px -2px 4px rgba(255, 255, 255, .5),
+            inset 2px 2px 2px rgba(255, 255, 255, .075),
+            inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
